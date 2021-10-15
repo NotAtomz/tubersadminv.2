@@ -1,4 +1,4 @@
-if not _G.CustomUI then _G.CustomUI = false end
+ if not _G.CustomUI then _G.CustomUI = false end
 VERSION = "2"
 
 if AlreadyLoaded then
@@ -7,7 +7,7 @@ end
 getgenv().AlreadyLoaded = true -- So that you can't execute the script twice
 
 if not game:IsLoaded() then
-  print("Tuberss Admin is waiting for the game to load..")
+  print("Tubers Admin is checking for server side commnds to load..")
 	game.Loaded:Wait()
 end
 prefix = ";" -- After running hb admin for the first time changing this won't do anything.
@@ -2595,10 +2595,10 @@ end
 )
 
 addcommand(
-"to",
+"goto",
 "teleports to specified user",
 1,
-{"to"},
+{"tpto"},
 function(user)
 user = getPlayer(user)
 plr = user.Name
@@ -2857,19 +2857,19 @@ Frame_2.Size = UDim2.new(0, 740, 0, 2)
 
 UIGradient.Color =
 ColorSequence.new {
-  ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)),
-  ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 42, 216))
+  ColorSequenceKeypoint.new(0.00, Color3.fromRGB(102, 255, 255)),
+  ColorSequenceKeypoint.new(1.00, Color3.fromRGB(128, 0, 255))
 }
 UIGradient.Parent = Frame_2
 
 TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundColor3 = Color3.fromRGB(102, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0, 0, 0.024390243, 0)
 TextLabel.Size = UDim2.new(0, 34, 0, 38)
 TextLabel.Font = Enum.Font.GothamBlack
 TextLabel.Text = prefix
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextColor3 = Color3.fromRGB(128, 0, 255)
 TextLabel.TextSize = 14.000
 TextLabel.TextTransparency = 0.400
 
@@ -2879,40 +2879,40 @@ function fireui()
 end
 Frame_3.Name = "Frame"
 Frame_3.Parent = Frame
-Frame_3.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+Frame_3.BackgroundColor3 = Color3.fromRGB(102, 255, 255)
 Frame_3.BackgroundTransparency = 1.000
 Frame_3.Position = UDim2.new(0.0459459461, 0, -1.63414633, 0)
 Frame_3.Size = UDim2.new(0, 500, 0, 67)
 Frame_3.Image = "rbxassetid://3570695787"
-Frame_3.ImageColor3 = Color3.fromRGB(5, 11, 24)
+Frame_3.ImageColor3 = Color3.fromRGB(128, 0, 255)
 Frame_3.ScaleType = Enum.ScaleType.Slice
 Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame_3.SliceScale = 0.040
 Frame_3.Visible = false
 TextLabel_2.Parent = Frame_3
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(102, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(0.435074389, 0, 0.209683388, 0)
 TextLabel_2.Size = UDim2.new(0, 34, 0, 38)
 TextLabel_2.Font = Enum.Font.Gotham
 TextLabel_2.Text = "Makes a character morph to R15 rig"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextColor3 = Color3.fromRGB(128, 0, 255)
 TextLabel_2.TextSize = 14.000
 
 Frame_4.Name = "Frame"
 Frame_4.Parent = Frame_3
-Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BackgroundColor3 = Color3.fromRGB(102, 255, 255)
 Frame_4.BackgroundTransparency = 1.000
 Frame_4.Size = UDim2.new(0, 500, 0, 5)
 Frame_4.Image = "rbxassetid://3570695787"
-Frame_4.ImageColor3 = Color3.fromRGB(177, 19, 229)
+Frame_4.ImageColor3 = Color3.fromRGB(128, 0, 255)
 Frame_4.ImageTransparency = 0.800
 Frame_4.ScaleType = Enum.ScaleType.Slice
 Frame_4.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame_4.SliceScale = 0.040
 
 TextBox.Parent = Frame
-TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundColor3 = Color3.fromRGB(128, 0, 255)
 TextBox.BackgroundTransparency = 1.000
 TextBox.Position = UDim2.new(0.0378378369, 0, 0, 0)
 TextBox.Size = UDim2.new(0, 712, 0, 39)
@@ -2954,7 +2954,7 @@ TextLabel_3.Size = UDim2.new(0, 131, 0, 36)
 TextLabel_3.ZIndex = 2
 TextLabel_3.Font = Enum.Font.GothamBlack
 TextLabel_3.Text = "Tubers Admin"
-TextLabel_3.TextColor3 = Color3.fromRGB(89, 0, 179)
+TextLabel_3.TextColor3 = Color3.fromRGB(128, 0, 255)
 TextLabel_3.TextSize = 16.000
 
 PenumbraShadow_2.Name = "PenumbraShadow"
@@ -2979,7 +2979,7 @@ TextLabel_4.Size = UDim2.new(0, 56, 0, 9)
 TextLabel_4.ZIndex = 2
 TextLabel_4.Font = Enum.Font.Gotham
 TextLabel_4.Text = "Notification"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextColor3 = Color3.fromRGB(128, 0, 255)
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextTransparency = 0.100
 
@@ -2991,7 +2991,7 @@ TextLabel_5.Size = UDim2.new(0, 56, 0, 9)
 TextLabel_5.ZIndex = 2
 TextLabel_5.Font = Enum.Font.Gotham
 TextLabel_5.Text = "Welcome to T Admin"
-TextLabel_5.TextColor3 = Color3.fromRGB(89, 0, 179)
+TextLabel_5.TextColor3 = Color3.fromRGB(128, 0, 255)
 TextLabel_5.TextSize = 14.000
 
 ImageLabel.Parent = Frame_5
@@ -3434,4 +3434,4 @@ game.CoreGui.CMDS.CmdList.Visible = true
 game.CoreGui.CMDS.CmdList:TweenSize(UDim2.new(0, 327, 0, 271), "Out", "Quad", 0.3, false)
 end
 )
-notify("Tubers Admin has loaded! " .. #commands .. " commands.")
+notify("The game is now server sided! Tubers Admin has loaded! " .. #commands .. " commands.")
